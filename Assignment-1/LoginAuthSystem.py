@@ -18,10 +18,6 @@ def validate_login(username, password):
     print("Error: Password must contain at least one digit")
     return False
 
-
-
-
-
 user = str(input("Enter your username: "))
 pwd = str(input("Enter your password: "))
 
