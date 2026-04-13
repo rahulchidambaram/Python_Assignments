@@ -1,5 +1,7 @@
+# ATM Withdrawal
 def  atm_withdrawal(withdrawal_amount):
     current_balance = 5000
+    # while user enters invalid amount
     if withdrawal_amount <= 0:
         print("Error: Withdrawal amount must be greater than 0")
         return False
@@ -8,7 +10,7 @@ def  atm_withdrawal(withdrawal_amount):
         return False
     elif withdrawal_amount % 500 != 0:
         print("Error: Withdrawal amount must be multiple of 500")
-        return False
+        return False    
     else:
         rem_balance = current_balance - withdrawal_amount
         print(f"""Withdrawal successful. Amount: {withdrawal_amount} /-
@@ -17,5 +19,5 @@ def  atm_withdrawal(withdrawal_amount):
 
 
 withdraw = int(input("Please enter an amount to withdraw:  "))
-result = atm_withdrawal(withdraw) 
+result = atm_withdrawal(withdraw)
 print(f"Return: {result}")
